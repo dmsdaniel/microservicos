@@ -1,0 +1,8 @@
+/home/daniel/spring/microservicos/microservices-new/order-service/src/main/java/com/example/orderservice/dto/OrderRequest.java
+/home/daniel/spring/microservicos/microservices-new/order-service/src/main/java/com/example/orderservice/repository/OrderRepository.java
+/home/daniel/spring/microservicos/microservices-new/order-service/src/main/java/com/example/orderservice/model/OrderItems.java
+/home/daniel/spring/microservicos/microservices-new/order-service/src/main/java/com/example/orderservice/controller/OrderController.java
+/home/daniel/spring/microservicos/microservices-new/order-service/src/main/java/com/example/orderservice/OrderServiceApplication.java
+/home/daniel/spring/microservicos/microservices-new/order-service/src/main/java/com/example/orderservice/dto/OrderItemsDto.java
+/home/daniel/spring/microservicos/microservices-new/order-service/src/main/java/com/example/orderservice/service/OrderService.java
+/home/daniel/spring/microservicos/microservices-new/order-service/src/main/java/com/example/orderservice/model/Order.java
