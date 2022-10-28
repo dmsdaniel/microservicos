@@ -1,5 +1,5 @@
-/home/daniel/spring/microservices-new/microservicos/microservices-new/inventory-service/src/main/java/com/example/inventoryservice/service/InventoryService.java
-/home/daniel/spring/microservices-new/microservicos/microservices-new/inventory-service/src/main/java/com/example/inventoryservice/controller/InventoryController.java
-/home/daniel/spring/microservices-new/microservicos/microservices-new/inventory-service/src/main/java/com/example/inventoryservice/repository/InventoryRepository.java
-/home/daniel/spring/microservices-new/microservicos/microservices-new/inventory-service/src/main/java/com/example/inventoryservice/model/Inventory.java
-/home/daniel/spring/microservices-new/microservicos/microservices-new/inventory-service/src/main/java/com/example/inventoryservice/InventoryServiceApplication.java
+/home/daniel/spring/microservicos/microservices-new/inventory-service/src/main/java/com/example/inventoryservice/model/Inventory.java
+/home/daniel/spring/microservicos/microservices-new/inventory-service/src/main/java/com/example/inventoryservice/controller/InventoryController.java
+/home/daniel/spring/microservicos/microservices-new/inventory-service/src/main/java/com/example/inventoryservice/service/InventoryService.java
+/home/daniel/spring/microservicos/microservices-new/inventory-service/src/main/java/com/example/inventoryservice/repository/InventoryRepository.java
+/home/daniel/spring/microservicos/microservices-new/inventory-service/src/main/java/com/example/inventoryservice/InventoryServiceApplication.java
