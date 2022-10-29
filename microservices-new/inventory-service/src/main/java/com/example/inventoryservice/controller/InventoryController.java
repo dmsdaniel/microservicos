@@ -1,15 +1,14 @@
 package com.example.inventoryservice.controller;
 
+import com.example.inventoryservice.dto.InventoryResponse;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.inventoryservice.service.InventoryService;
 
 import lombok.RequiredArgsConstructor;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/inventory")
@@ -17,9 +16,9 @@ import lombok.RequiredArgsConstructor;
 public class InventoryController {
     private final InventoryService inventoryService;
 
-    @GetMapping("/{sku-code}")
+    @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public boolean isonStock(@PathVariable("sku-code") String skuCode){
+    public List<InventoryResponse> isonStock(@RequestParam List<String> skuCode){
         return inventoryService.isOnStock(skuCode);
     }
     
