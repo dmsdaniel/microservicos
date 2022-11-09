@@ -24,7 +24,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 public class OrderService {
     final OrderRepository orderRepository;
     private final WebClient.Builder webClientBuilder;
-    public void placeOrder(OrderRequest orderRequest){
+    public String placeOrder(OrderRequest orderRequest){
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
         List<OrderItems> list = orderRequest.getOrderItensDto().stream().map(this::mapToDto).toList();
@@ -45,10 +45,10 @@ public class OrderService {
         allProductsInStock = Arrays.stream(inventoryResponses).allMatch(InventoryResponse::isInStock);
         if(allProductsInStock){
             orderRepository.save(order);
+            return "Ordem createad!";
         } else {
             throw new IllegalArgumentException("Produto não encontrado, por favor tente mais tarde!");
         }
-
 
     }
     private OrderItems mapToDto(OrderItemsDto ordemItemDto) {
